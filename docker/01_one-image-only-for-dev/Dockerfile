@@ -17,7 +17,7 @@ RUN echo 'deb http://www.rabbitmq.com/debian/ testing main' | tee /etc/apt/sourc
 
 # Dependencies
 RUN apt-get update && apt-get install -yq --force-yes \
-                                      tmux vim curl bash \
+                                      tmux vim curl bash zip \
                                       rabbitmq-server \
                                       postgresql-9.4 postgresql-client-9.4 postgresql-contrib-9.4 && \
                                       rm -rf /var/cache/apt/*
